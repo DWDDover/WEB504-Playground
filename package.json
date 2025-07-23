@@ -1,0 +1,20 @@
+{
+  "name": "web504-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DWDDover/WEB504-Playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DWDDover/WEB504-Playground/issues"
+  },
+  "homepage": "https://github.com/DWDDover/WEB504-Playground#readme"
+}
