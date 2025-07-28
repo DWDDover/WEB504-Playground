@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta charset, viewpoint for mobile, SEO tags-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Declan Dover - Software Developer. Explore skills, projects, and contact information">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declan Dover | Profile, Skills, & Projects</title>
+
+    <!-- SEO: Open Graph for better social media sharing -->
+     <meta property="og:title" content="Declan Dover | Profile, Skills, & Projects">
+     <meta property="og:description" content="Declan Dover - Software Developer. Explore skills, projects, and contact information">
+     <meta property="og:image" content="">
+     <meta property="og:type" content="website">
+
+    <!--Link to external CSS-->
+    <link rel="stylesheet" href="styles.css">
+
+    </head>
+<body>
+    <!--Main header and nav-->
+    <header class="sticky-header" role="banner">
+        <!--Site title with id and keyboard focus-->
+        <h1 id="main-title" tabindex="0">Declan's Profile</h1>
+        <nav aria-label="Main Navigation">
+            <ul class="nav-list">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <!--Target="_blank" opens link in a new tab-->
+                <li><a href="#contact" class="nav-link" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main page content-->
+    <main id="main">
+        <!--about me section-->
+        <section id="about" class="card animated">
+            <img src="https://storage.googleapis.com/website-production/uploads/2017/10/stock-photo-guide-cheesy-celebration.jpg" alt="portrait of Declan Dover" class="profile-img">
+            <h2 id="about-heading">About Me</h2>
+            <p>I am a software developer</p>
+            <!--Hobbies as an inline list-->
+            <ul class="hobbies">
+                <li>Football</li>
+                <li>Technology</li>
+            </ul>
+        </section>
+
+        <!-- projects section with grid an d slide-in animation -->
+        <section id="projects" class="card grid-container">
+            <!-- Heading is visually hidden for screen readers only -->
+             <h2 id="projects-heading" class="visually-hidden">Projects</h2>
+             <div class="project slide-in-left">
+                <h3>RAG AI System</h3>
+                <p>RAG AI system project and NPM package DX project</p>
+            </div>
+            <div class="project slide-in-right">
+                <h3>Placeholder Title</h3>
+                <p>Placeholder description</p>
+            </div>
+        </section>
+        <!-- Contact form, with accessible labels and required fields -->
+         <section id="contact" class="card">
+            <h2 id="contact-heading">Contact Me</h2>
+            <form autocomplete="on">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" id="name" placeholder="Your Name" required><br>
+
+                <label for="email">Your Email</label>
+                <input type="email" name="email" id="email" placeholder="Your email here" required><br>
+                
+                <button type="submit" class="button">Send</button>
+                <button type="reset" class="button secondary">Reset</button>
+            </form>
+         </section>
+    </main>
+
+<!-- Page footer with structured data for SEO -->
+ <footer role="contentinfo">
+    <p>&copy; 2025 Declan Dover</p>
+    <script type="application/ld+json">
+
+    </script>
+ </footer>
+
+</body>
+</html>
