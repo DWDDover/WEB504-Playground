@@ -1,87 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--Meta charset, viewpoint for mobile, SEO tags-->
-    <meta charset="UTF-8">
-    <meta name="description" content="Declan Dover - Software Developer. Explore skills, projects, and contact information">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Declan Dover | Profile, Skills, & Projects</title>
+  <!-- Meta charset, viewport for mobile, and SEO tags -->
+  <meta charset="UTF-8">
+  <title>Declan Dover | Profile, Skills & Projects</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- SEO: Open Graph for better social media sharing -->
-     <meta property="og:title" content="Declan Dover | Profile, Skills, & Projects">
-     <meta property="og:description" content="Declan Dover - Software Developer. Explore skills, projects, and contact information">
-     <meta property="og:image" content="">
-     <meta property="og:type" content="website">
+  <!-- SEO: Open Graph for better social media sharing -->
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="https://placekitten.com/150/150">
+  <meta property="og:type" content="website">
 
-    <!--Link to external CSS-->
-    <link rel="stylesheet" href="styles.css">
-
-    </head>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    <!--Main header and nav-->
-    <header class="sticky-header" role="banner">
-        <!--Site title with id and keyboard focus-->
-        <h1 id="main-title" tabindex="0">Declan's Profile</h1>
-        <nav aria-label="Main Navigation">
-            <ul class="nav-list">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <!--Target="_blank" opens link in a new tab-->
-                <li><a href="#contact" class="nav-link" target="_blank">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!--Main page content-->
-    <main id="main">
-        <!--about me section-->
-        <section id="about" class="card animated">
-            <img src="https://storage.googleapis.com/website-production/uploads/2017/10/stock-photo-guide-cheesy-celebration.jpg" alt="portrait of Declan Dover" class="profile-img">
-            <h2 id="about-heading">About Me</h2>
-            <p>I am a software developer</p>
-            <!--Hobbies as an inline list-->
-            <ul class="hobbies">
-                <li>Football</li>
-                <li>Technology</li>
-            </ul>
-        </section>
+  <!-- Accessibility: "Skip to main content" link for keyboard users -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+  
+  <!-- Main header and navigation -->
+  <header class="sticky-header" role="banner">
+    <!-- Site title with id and keyboard focus -->
+    <h1 id="main-title" tabindex="0">Declan Dover's Profile</h1>
+    <nav aria-label="Main Navigation">
+      <ul class="nav-list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <!-- target="_blank" opens link in new tab, rel="noopener" for security -->
+        <li><a href="#contact" class="nav-link" target="_blank" rel="noopener">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- projects section with grid an d slide-in animation -->
-        <section id="projects" class="card grid-container">
-            <!-- Heading is visually hidden for screen readers only -->
-             <h2 id="projects-heading" class="visually-hidden">Projects</h2>
-             <div class="project slide-in-left">
-                <h3>RAG AI System</h3>
-                <p>RAG AI system project and NPM package DX project</p>
-            </div>
-            <div class="project slide-in-right">
-                <h3>Placeholder Title</h3>
-                <p>Placeholder description</p>
-            </div>
-        </section>
-        <!-- Contact form, with accessible labels and required fields -->
-         <section id="contact" class="card">
-            <h2 id="contact-heading">Contact Me</h2>
-            <form autocomplete="on">
-                <label for="name">Your Name</label>
-                <input type="text" name="name" id="name" placeholder="Your Name" required><br>
+  <!-- Main page content -->
+  <main id="main" tabindex="-1">
+    <!-- About Me section, animated in -->
+    <section id="about" class="card animated bounce-in" aria-labelledby="about-heading">
+      <!-- Alt text describes the image for screen readers -->
+      <img src="/public/images/stockphoto.jpg" alt="Portrait of your photo" class="profile-img">
+      <h2 id="about-heading">About Me</h2>
+      <p>  
+      <span class="highlight"></span></p>
+      <!-- Hobbies as an inline list -->
+      <ul class="hobbies">
+        <li>Football</li>
+        <li>Films</li>
+        <li>Coding</li>
+        <li>Technology</li>
+      </ul>
+    </section>
 
-                <label for="email">Your Email</label>
-                <input type="email" name="email" id="email" placeholder="Your email here" required><br>
-                
-                <button type="submit" class="button">Send</button>
-                <button type="reset" class="button secondary">Reset</button>
-            </form>
-         </section>
-    </main>
+    <!-- Skills section, with flexbox layout and animated skill pills -->
+    <section id="skills" class="card fade-in-delay" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <div class="flex-container">
+        <div class="skill-item pulse-on-hover" tabindex="0">HTML</div>
+        <div class="skill-item pulse-on-hover" tabindex="0">CSS</div>
+        <div class="skill-item pulse-on-hover" tabindex="0">JavaScript</div>
+      </div>
+    </section>
 
-<!-- Page footer with structured data for SEO -->
- <footer role="contentinfo">
-    <p>&copy; 2025 Declan Dover</p>
+    <!-- Projects section with grid and slide-in animations -->
+    <section id="projects" class="card grid-container" aria-labelledby="projects-heading">
+      <!-- Heading is visually hidden for screen readers only -->
+      <h2 id="projects-heading" class="visually-hidden">Projects</h2>
+      <div class="project slide-in-left" tabindex="0">
+        <h3>Placeholder Title</h3>
+        <p>Placeholder Description</p>
+      </div>
+      <div class="project slide-in-right" tabindex="0">
+        <h3>Placeholder Title</h3>
+        <p>Placeholder Description</p>
+      </div>
+    </section>
+
+    <!-- Contact form, with accessible labels and required fields -->
+    <section id="contact" class="card" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+      <form aria-label="Contact form" autocomplete="on">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true">
+
+        <button class="button" type="submit">Send</button>
+        <button class="button secondary" type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Example overlay div, hidden by default (for modal or darken effect) -->
+  <div class="overlay hidden" aria-hidden="true"></div>
+
+  <!-- Page footer with structured data for SEO -->
+  <footer role="contentinfo">
+    <p>&copy;</p>
+    <!-- SEO: Schema.org structured data for richer Google results -->
     <script type="application/ld+json">
-
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Your name",
+      "url": "https://yourwebsite.com",
+      "sameAs": [
+        "",
+        ""
+      ],
+      "jobTitle": "",
+      "description": ""
+    }
     </script>
- </footer>
-
+  </footer>
 </body>
 </html>
