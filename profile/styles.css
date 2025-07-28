@@ -259,3 +259,60 @@ label {
 .button:active {
     background: #9e9eff;
 }
+
+/* Big, purple first letter in each paragraph for style */
+p::first-letter {
+  font-size: 200%;
+  color: #8e44ad;
+}
+/* Add a faint star icon after each paragraph */
+p::after {
+  content: " ✦";
+  color: #bbb;
+}
+
+/* ========== OVERLAY & UTILITY CLASSES ========== */
+
+/* Overlay for modal popups or similar (hidden by default) */
+.overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 999;
+  opacity: 0.95;
+}
+/* Hide any element with this class */
+.hidden {
+  display: none;
+}
+
+/* ========== FOOTER ========== */
+
+/* Centre, grey, smaller text */
+footer {
+  margin: 2em 0 1em 0;
+  text-align: center;
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* On small screens: single column grid, stack nav, shrink image */
+@media (max-width: 600px) {
+  .card, .grid-container {
+    max-width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .flex-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .nav-list {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .profile-img {
+    width: 80px;
+  }
+}
