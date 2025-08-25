@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="copilot-test.css">
+</head>
+<body>
+    <header>
+        <h1>GreenGrid</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Welcome to GreenGrid</h2>
+            <p>
+                Discover a modern, responsive landing page layout built with semantic HTML and CSS grid. Perfect for showcasing your product or service.
+            </p>
+            <button class="cta-btn">Get Started</button>
+            <form id="newsletter-form" novalidate aria-labelledby="newsletter-label">
+                <label id="newsletter-label" for="email">Subscribe to our newsletter:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required aria-describedby="email-error">
+                <div id="email-error" class="form-error" aria-live="polite"></div>
+                <div style="margin: 1rem 0;">
+                    <input type="checkbox" id="consent" name="consent" required aria-describedby="consent-error">
+                    <label for="consent">I agree to receive emails from GreenGrid.</label>
+                </div>
+                <div id="consent-error" class="form-error" aria-live="polite"></div>
+                <button type="submit" class="cta-btn">Subscribe</button>
+            </form>
+        </section>
+        <section class="features">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Fast & Responsive</h3>
+                    <p>Adapts seamlessly to any device for a smooth user experience.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Modern Design</h3>
+                    <p>Clean, vibrant look with a focus on usability and aesthetics.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Easy Customization</h3>
+                    <p>Simple structure makes it easy to tailor to your needs.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Accessible</h3>
+                    <p>Built with accessibility in mind for all users.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 GreenGrid. All rights reserved.</p>
+    </footer>
+</body>
+</html>
